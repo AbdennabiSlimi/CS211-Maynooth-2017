@@ -179,7 +179,7 @@ class Tree{
 			preOrder(localRoot.right);
 		}
 	}
-	//Prints rightChild - leftChild - root
+	//Prints leftChild - rightChild - root
 	public void postOrder(Node localRoot){
 		if(localRoot != null){
 			postOrder(localRoot.left);
