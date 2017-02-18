@@ -33,7 +33,7 @@ public class Lab2_HuffTree{
 			tree.frequency = table.get(tree.root.letter);
 
 			//The variable aFrequency stores the ASCII value of the letter
-            tree.aFrequency = (int)tree.root.letter;
+            		tree.aFrequency = (int)tree.root.letter;
 
 			forest.add(tree);
 		}
@@ -48,28 +48,28 @@ public class Lab2_HuffTree{
 
 			newTree.root = new Node();
 
-            //If the frequency is the same order the tree based on it's aFrequency
-            if(temp1.frequency == temp2.frequency){
-                if(temp1.aFrequency < temp2.aFrequency){
-                    newTree.root.left = temp1.root;
-                    newTree.root.right = temp2.root;
-                }
-                else{
-			         newTree.root.left = temp2.root;
-			         newTree.root.right = temp1.root;
-                }
-            }
-            //Else just order the tree as normal
-            else{
-                newTree.root.left = temp1.root;
-                newTree.root.right = temp2.root;
-            }
+		    	//If the frequency is the same order the tree based on it's aFrequency
+		    	if(temp1.frequency == temp2.frequency){
+				if(temp1.aFrequency < temp2.aFrequency){
+			    		newTree.root.left = temp1.root;
+			    		newTree.root.right = temp2.root;
+				}
+				else{
+					 newTree.root.left = temp2.root;
+					 newTree.root.right = temp1.root;
+				}
+            		}
+            		//Else just order the tree as normal
+            		else{
+                		newTree.root.left = temp1.root;
+                		newTree.root.right = temp2.root;
+            		}
 
 			//frequency is just the sum of the frequency of each letter in the tree
 			newTree.frequency = temp1.frequency + temp2.frequency;
 
 			//aFrequncy is the ASCII value of letter with the lowest ASCII value in the tree
-            newTree.aFrequency = Math.min(temp1.aFrequency, temp2.aFrequency);
+            		newTree.aFrequency = Math.min(temp1.aFrequency, temp2.aFrequency);
 
 			forest.add(newTree);
 		}
@@ -88,7 +88,7 @@ public class Lab2_HuffTree{
 class HuffmanTree implements Comparable<HuffmanTree>{
 	public Node root;
 	public int frequency;
-    public int aFrequency;
+    	public int aFrequency;
 	public Node left;
 	public Node right;
 
@@ -106,13 +106,13 @@ class HuffmanTree implements Comparable<HuffmanTree>{
 
 		//Will sort the pQueue by aFrequency if frequency of both trees is equal
 		else{
-            if(aFrequency > object.aFrequency)
-                return 1;
-            else if(aFrequency < object.aFrequency)
-                return -1;
-            else
-			    return 0;
-        }
+            		if(aFrequency > object.aFrequency)
+                		return 1;
+            		else if(aFrequency < object.aFrequency)
+                		return -1;
+            		else
+			    	return 0;
+        	}
 	}
 
 	String path = "error";
