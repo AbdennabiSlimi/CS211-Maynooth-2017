@@ -1,6 +1,6 @@
 //This is the answer to the actual Hackerrank question
 //where we had to find the length of the longest word we can form from the given letters
-//I adapted my solution to the original question he gave us to answer this
+//I adapted my solution from the original question he gave us, to answer this
 import java.util.*;
 
 public class Lab4_ScrabbleHackerrankAnswer{
@@ -71,22 +71,7 @@ public class Lab4_ScrabbleHackerrankAnswer{
 		return true;
 	}
 }
-/*class comp implements Comparator<String> {
-	  public int compare(String o1, String o2) {
-		    if (o1.length() > o2.length())
-		    	return -1;
-		    else if (o1.length() < o2.length())
-		    	return 1;
-		    else{
-		    	if(o1.compareTo(o2) > 0)
-		    		return 1;
-		    	else if(o1.compareTo(o2) < 0)
-		    		return -1;
-		    	else
-		    		return 0;
-		    }
-	  }
-}*/
+
 //This comparator sorts by string length and if they're the same length, alphabetically
 class comp implements Comparator<String> {
 	  public int compare(String one, String two) {
