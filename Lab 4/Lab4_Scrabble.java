@@ -5,7 +5,7 @@ import java.io.*;
 public class Lab4_Scrabble{
 	public static void main(String args[]) throws FileNotFoundException{
 		//Reads in the dictionary
-		Scanner file = new Scanner(new FileReader("C:/Users/Rian/Desktop/Lab4/dictionary.txt"));
+		Scanner file = new Scanner(new FileReader(/*Put file location here*/));
 		ArrayList<String> words = new ArrayList<String>();
 
 		//Fills an array list with all the words in the dictionary
