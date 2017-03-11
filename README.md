@@ -6,3 +6,4 @@ LABS: <br/ b>
 + [Lab 2](Data Compression/Lab2_HuffTree.java) (Huffman Tree)
 + [Lab 3](Quick Sort/Lab3_QuickSort.java) (Quick Sort)
 + [Lab 4](Lab 4/Lab4_ScrabbleHackerrankAnswer.java) (Scrabble)
++ [Lab 5](Cryptography/Lab5_EncryptedText.java) (Encoded Text)
