@@ -1,7 +1,7 @@
 package lab6;
 
 import java.util.Scanner;
-public class Answer {
+public class Lab6_FindM {
 	public static void main(String args[]){
 		Scanner sc = new Scanner(System.in);
 		//Read in public key (p, g, result)
