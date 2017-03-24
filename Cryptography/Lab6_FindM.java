@@ -5,7 +5,7 @@ public class Lab6_FindM {
 	public static void main(String args[]){
 		Scanner sc = new Scanner(System.in);
 		//Read in public key (p, g, result)
-        String A[] = sc.nextLine().split(" ");
+        	String A[] = sc.nextLine().split(" ");
 		long p = Long.parseLong(A[0]);
 		long g = Long.parseLong(A[1]);
 		
@@ -22,7 +22,7 @@ public class Lab6_FindM {
 		}
 		
 		//Read in public cipher (c1, c2)
-        String B[] = sc.nextLine().split(" ");
+        	String B[] = sc.nextLine().split(" ");
 		long c1 = Long.parseLong(B[0]);
 		long c2 = Long.parseLong(B[1]);
 		
