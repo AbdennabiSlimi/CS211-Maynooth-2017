@@ -8,3 +8,4 @@ LABS:
 + [Lab 4](Lab%204/Lab4_ScrabbleHackerrankAnswer.java) (Scrabble)
 + [Lab 5](Cryptography/Lab5_EncryptedText.java) (Encoded Text)
 + [Lab 6](Cryptography/Lab6_FindM.java) (Public Key Cryptography)
++ [Lab 7](Hashing/Lab7_Hashing.java) (Hashing)
